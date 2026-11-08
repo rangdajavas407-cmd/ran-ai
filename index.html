@@ -145,8 +145,8 @@ textarea{flex:1;background:transparent;border:none;color:var(--text);font:14.5px
 </div></div>
 
 <div class="overlay" id="overlay" onclick="toggleSidebar(false)"></div>
-<div class="toast" id="toast"</div>
-
+<div class="toast" id="toast"></div>
+  
 <div class="sidebar" id="sidebar">
   <div class="sb-head"><div class="logo"><div class="logo-icon">⚡</div><span>Alarich AI</span></div>
     <button class="new-btn" onclick="newChat()">✏️ Chat Baru</button></div>
@@ -352,7 +352,7 @@ const LS=k=>{try{return JSON.parse(localStorage.getItem(k))}catch(e){return null
 let chats=LS("alarich_chats_v6")||LS("alarich_chats_v5")||{};
 let activeId=localStorage.getItem("alarich_active_v5")||null;
 let curMode=localStorage.getItem("alarich_mode")||"academic";
-if(!MODES[curMode)curMode="academic";
+if(!MODES[curMode])curMode="academic";
 let curSub={religion:localStorage.getItem("alarich_religion")||"islam",persona:localStorage.getItem("alarich_persona")||"vera"};
 let busy=false;
 
